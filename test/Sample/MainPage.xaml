@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Sample.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:sample="clr-namespace:Sample"
+    x:DataType="sample:MainPageViewModel">
+    <Grid>
+        <ScrollView>
+            <Grid>
+                <VerticalStackLayout Padding="30" Spacing="25">
+                    <Label
+                        SemanticProperties.HeadingLevel="Level1"
+                        Style="{StaticResource Headline}"
+                        Text="Keyboard visibility listener " />
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Label Text="Is keyboard open:" VerticalOptions="Center" />
+                        <Switch
+                            IsEnabled="True"
+                            IsToggled="{Binding VisibilityState.IsKeyboardOpen, Mode=OneWay}"
+                            VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+
+
+                    <Entry x:Name="Entry1" Text="Welcome to &#10;.NET Multi-platform App UI" />
+
+                    <Grid
+                        ColumnDefinitions="*,*"
+                        ColumnSpacing="10"
+                        RowDefinitions="*,*"
+                        RowSpacing="10">
+
+                        <Button
+                            Clicked="HideKeyboardAsyncCommunityToolkitClicked"
+                            HorizontalOptions="Fill"
+                            Text="Hide keyboard communityToolkit" />
+                        <Button
+                            Grid.Column="1"
+                            Clicked="ShowKeyboardAsyncCommunityToolkitClicked"
+                            HorizontalOptions="Fill"
+                            Text="Show keyboard communityToolkit" />
+
+                        <Button
+                            Grid.Row="1"
+                            Clicked="ToggleKeyboardVisibilityClicked"
+                            HorizontalOptions="Fill"
+                            Text="Toggle keyboard visibility" />
+                        <Button
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Clicked="ForceCloseKeyboardClicked"
+                            HorizontalOptions="Fill"
+                            Text="Force close keyboard" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Grid>
+
+        </ScrollView>
+
+
+    </Grid>
+
+
+</ContentPage>
