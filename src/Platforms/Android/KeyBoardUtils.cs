@@ -39,7 +39,7 @@ namespace KeyboardVisibilityListener.Droid
             {
                 return;
             }
-            Android.Graphics.Rect r = new ();
+            Android.Graphics.Rect r = new();
             mRootView.GetWindowVisibleDisplayFrame(r);
 
             var heightDiff = mRootView.RootView?.Height - (r.Bottom - r.Top);
@@ -112,7 +112,17 @@ namespace KeyboardVisibilityListener.Droid
                 inputMethodManager.ToggleSoftInput(ShowFlags.Forced, 0);
             }
         }
-
+        public static void ForceCloseKeyboard(Context? context)
+        {
+            if (context is null)
+            {
+                return;
+            }
+            if (context.GetSystemService(Context.InputMethodService) is InputMethodManager inputMethodManager)
+            {
+                inputMethodManager.HideSoftInputFromWindow(null, HideSoftInputFlags.None);
+            }
+        }
         //    /**
         //     * Force closes the soft keyboard
         //     * @param activeView the view with the keyboard focus

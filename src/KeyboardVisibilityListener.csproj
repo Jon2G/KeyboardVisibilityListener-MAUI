@@ -30,13 +30,13 @@
 		<IncludeSymbols>True</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageId>$(AssemblyName)-MAUI</PackageId>
-		<PackageProjectUrl>https://github.com/Jon2G/MAUI-JustifyLabel</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/Jon2G/KeyboardVisibilityListener-MAUI</PackageProjectUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<Description>
 			A keyboard visibility listener because Android doesn't provide an easy way to do this.
 		</Description>
 		<Copyright>none</Copyright>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		
 	</PropertyGroup>
 

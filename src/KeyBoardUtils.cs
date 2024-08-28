@@ -20,7 +20,12 @@ namespace KeyboardVisibilityListener
             Droid.KeyboardUtils.ToggleKeyboardVisibility(Platform.CurrentActivity);
 #endif
         }
-
+        public static void ForceCloseKeyboard()
+        {
+#if ANDROID
+            Droid.KeyboardUtils.ForceCloseKeyboard(Platform.CurrentActivity);
+#endif
+        }
         /**
          * Force closes the soft keyboard
          * @param activeView the view with the keyboard focus
