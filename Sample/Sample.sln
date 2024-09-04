@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample", "Sample.csproj", "{7DE715F7-5369-4304-8D28-926783FFC71C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyboardVisibilityListener", "..\..\src\KeyboardVisibilityListener.csproj", "{0F2CE9A9-F1BB-4379-B7CF-FF1EA91CB697}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyboardVisibilityListener", "..\src\KeyboardVisibilityListener.csproj", "{0F2CE9A9-F1BB-4379-B7CF-FF1EA91CB697}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

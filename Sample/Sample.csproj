@@ -64,7 +64,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\src\KeyboardVisibilityListener.csproj" />
+	  <ProjectReference Include="..\src\KeyboardVisibilityListener.csproj" />
 	</ItemGroup>
 
 </Project>
