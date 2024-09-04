@@ -3,6 +3,7 @@
 ⚠️ Currently only supports Android 
 
 
+https://github.com/user-attachments/assets/ba49f287-1f7c-4fdc-910a-c7f538e22cdf
 
 
 ## Getting started
